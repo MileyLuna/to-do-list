@@ -59,10 +59,13 @@ function renderList(quests) {
     for (let quest of quests) {
         //dynamtically append input value along with delete and check box on each submit
         $('.taskList').append(`
-    <li> ${quest.list} </li> 
-    <button class="delete-btn" data-id= ${quest.id}> Delete </button> 
-    <button class="complete-btn" data-id=${quest.id} data-status=${quest.complete}> Complete </button> 
-
+    <div class="container">
+        <li class="list"> ${quest.list} </li> 
+    </div>
+    <div class="container2">
+        <button class="delete-btn" data-id= ${quest.id}> Delete </button> 
+        <button class="complete-btn" data-id=${quest.id} data-status=${quest.complete}> Complete </button> 
+    </div>
     `)
     };
     //console.log('list is loaded');
@@ -106,7 +109,7 @@ function checkOff (){
         data: {status: complete}
     }).then (()=>{
         //changeColor();
-        //$(this).addClass('next');
+        $(this).addClass('next');
         getList();
     }).catch((error)=>{
         console.log('error in put:', error);

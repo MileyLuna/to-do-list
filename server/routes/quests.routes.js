@@ -39,7 +39,7 @@ router.put('/:id', (req, res) =>{
     let queryText;
     if (complete !== true){
         queryText = 'UPDATE "quests" SET "complete" = true WHERE id = $1;';
-    } else (res.sendStatus(500));{
+    } else {(res.sendStatus(500));
     }
     pool.query(queryText, [questId])
     .then((dbResponse)=>{

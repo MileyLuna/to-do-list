@@ -1,17 +1,53 @@
-html, body {
-    width: 50%;
+* {
+    box-sizing:border-box;
     margin: 0 auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.container {
-    width: 360px;
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(115, 156, 156);
 }
 
+.taskList{
+    margin-top: 2rem;
+}
 h1 {
-    color:aliceblue;
+    color:rgb(82, 84, 86);
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
 }
 
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.inputBox{
+    flex: 1 1 0%;
+    background-color: whitesmoke;
+    font-size: 1.25rem;
+}
+
+.submit-btn{
+    color: white;
+    font-size: 1.25rem;
+    background-image: linear-gradient(to right, rgb(247, 247, 59), rgb(225, 169, 64)
+    );
+
+
+}
+
+
+#new-task-form{
+    display: flex;
+}
 .next {
     background-color: rgb(204, 248, 149);
 }
