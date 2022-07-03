@@ -8,7 +8,7 @@ function setupClickListeners() {
 
     $('.submit-btn').on('click', collectQuest);
     $('.taskList').on('click','.delete-btn', deleteList);
-    $('.taskList').on('click', '.complete-btn', checkOff);
+    $(document).on('click', '.complete-btn', checkOff);
 }
 
 //function to send client input to database
@@ -105,14 +105,18 @@ function checkOff (){
         url: `/quests/${id}`,
         data: {status: complete}
     }).then (()=>{
-        $(this).addClass('next');
+        //changeColor();
+        //$(this).addClass('next');
         getList();
     }).catch((error)=>{
         console.log('error in put:', error);
     })
 }
 
-
+//function to change list background color
+// function changeColor(){
+//     $(this).addClass('next');
+// }
 
 //function to delete list
 function deleteList(){

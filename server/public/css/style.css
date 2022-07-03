@@ -1,3 +1,17 @@
+html, body {
+    width: 50%;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    width: 360px;
+}
+
+h1 {
+    color:aliceblue;
+}
+
 .next {
     background-color: rgb(204, 248, 149);
 }

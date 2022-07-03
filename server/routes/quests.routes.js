@@ -32,10 +32,10 @@ router.post('/', (req, res) => {
         });
 });
 
-router.put('/complete/:id', (req, res) =>{
+router.put('/:id', (req, res) =>{
     let questId = req.params.id;
     let complete = req.body.status;
-
+    console.log('put request:', complete);
     let queryText;
     if (complete !== true){
         queryText = 'UPDATE "quests" SET "complete" = true WHERE id = $1;';
