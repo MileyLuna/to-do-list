@@ -23,7 +23,7 @@ router.post('/', (req, res) => {
     const collectQuest = req.body;
     const queryText = ` INSERT INTO "quests" ("list") VALUES ($1);
     `;
-    pool.query(queryText [collectQuest.list])
+    pool.query(queryText, [collectQuest.list])
         .then((result)=>{
             res.sendStatus(201);
         }).catch ((error) =>{
@@ -31,6 +31,37 @@ router.post('/', (req, res) => {
             res.sendStatus(500);
         });
 });
+
+router.put('/complete/:id', (req, res) =>{
+    let questId = req.params.id;
+    let complete = req.body.status;
+
+    let queryText;
+    if (complete !== true){
+        queryText = 'UPDATE "quests" SET "complete" = true WHERE id = $1;';
+    } else (res.sendStatus(500));{
+    }
+    pool.query(queryText, [questId])
+    .then((dbResponse)=>{
+        res.send(dbResponse.rows);
+    }).catch.log(`error in router updating /put ${queryText} ${error}`)
+    res.sendStatus(500);
+})
+
+router.delete('/:id', (req, res)=>{
+    let reqId = req.params.id;
+    console.log('In req.params.id /delete:', req.params.id);
+
+    let queryText = 'DELETE FROM "quests" WHERE id = $1;';
+    pool.query(queryText, [reqId])
+    .then(()=> {
+        console.log('list deleted:', reqId);
+        res.sendStatus(200);
+    }).catch((error)=>{
+        console.log('error in router delete:', error);
+        res.sendStatus(500);
+    })
+})
 
 
 
