@@ -60,11 +60,13 @@ function renderList(quests) {
         //dynamtically append input value along with delete and check box on each submit
         $('.taskList').append(`
     <div class="container">
-        <li class="list"> ${quest.list} </li> 
-    </div>
-    <div class="container2">
-        <button class="delete-btn" data-id= ${quest.id}> Delete </button> 
-        <button class="complete-btn" data-id=${quest.id} data-status=${quest.complete}> Complete </button> 
+        <div class"list">
+            <li> ${quest.list} </li> 
+        </div>
+        <div>
+            <button class="delete-btn" data-id= ${quest.id}> Delete </button> 
+            <button class="complete-btn" data-id=${quest.id} data-status=${quest.complete}> Complete </button> 
+        </div>
     </div>
     `)
     };

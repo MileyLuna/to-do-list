@@ -1,9 +1,9 @@
 * {
     box-sizing:border-box;
     margin: 0 auto;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
 
 
 body{
@@ -40,9 +40,35 @@ input, button {
     font-size: 1.25rem;
     background-image: linear-gradient(to right, rgb(247, 247, 59), rgb(225, 169, 64)
     );
-
-
 }
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.container2 .text{
+    color:antiquewhite;
+    font-size: 1.25rem;
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    transition: 0.4s;
+}
+
+.delete-btn{
+    background-color: rgb(247, 247, 59)
+}
+
+.complete-btn{
+    background-color: rgb(225, 169, 64)
+}
+
+
 
 
 #new-task-form{
