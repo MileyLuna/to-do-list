@@ -1,6 +1,7 @@
+
 $((onReady) => {
     setupClickListeners();
-    collectQuest();
+    getList();
 
 });
 

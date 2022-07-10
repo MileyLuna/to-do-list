@@ -1,9 +1,38 @@
-# Project Name
+# To-Do List
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
 
 ## Description
+Duration: 8+ hours
 
-Your project description goes here. What problem did you solve? How did you solve it?
+Create a to-do list that allows user to add, update, and delete tasks.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+When adding task. It will show on the DOM and stored in the database.
+
+The update will allow user to mark the task as completed and change the background color of that task.
+
+The delete will delete it on both the user and database end.
+
+Include a database.sql file that includes all of your CREATE TABLE quries.
+
+It was challenging creating a checkbox and changing the background color once a task was completed.
+
+## Installation
+- HTML
+- Javascript
+- jQuery
+- CSS
+- SQL Database (this project use's Postico)
+
+###Database
+Create a new database through Postico, using the name weekend-to-do-app. Don't forget to use this name in your database connection configuration on your server.
+
+###Styling
+Bring some CSS style to the font family, size and color, and background color. Text color and/or background color of that task to change showing it has been completed.
+
+## Built With
+
+- Visual Code
+- Postico
+
+## Acknowledgement
+

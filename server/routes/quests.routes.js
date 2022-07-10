@@ -39,13 +39,14 @@ router.put('/:id', (req, res) =>{
     let queryText;
     if (complete !== true){
         queryText = 'UPDATE "quests" SET "complete" = true WHERE id = $1;';
-    } else {(res.sendStatus(500));
-    }
+    } else {console.log("The IF statement failed");}
     pool.query(queryText, [questId])
     .then((dbResponse)=>{
         res.send(dbResponse.rows);
-    }).catch.log(`error in router updating /put ${queryText} ${error}`)
-    res.sendStatus(500);
+    }).catch(function(e) {
+        console.error(e);
+        res.sendStatus(500);
+    });
 })
 
 router.delete('/:id', (req, res)=>{
