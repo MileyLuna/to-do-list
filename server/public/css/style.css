@@ -10,16 +10,22 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(115, 156, 156);
+    background-image: linear-gradient( teal, green );
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .taskList{
-    margin-top: 2rem;
+    margin-top: 4rem;
+    list-style-type: none;
+    border: 3px solid greenyellow;
 }
+
 h1 {
     color:rgb(82, 84, 86);
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
 }
 
 input, button {
@@ -32,41 +38,43 @@ input, button {
 .inputBox{
     flex: 1 1 0%;
     background-color: whitesmoke;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
+
 
 .submit-btn{
     color: white;
-    font-size: 1.25rem;
+    font-size: 1rem;
     background-image: linear-gradient(to right, rgb(247, 247, 59), rgb(225, 169, 64)
     );
 }
 
-.container{
+.containerList{
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    min-width: 30%;
 }
 
 
 
-.container2 .text{
+/* .container2 .text{
     color:antiquewhite;
-    font-size: 1.25rem;
+    font-size: 1rem;
     width: 100%;
     display: block;
     padding: 1rem;
     transition: 0.4s;
-}
+} */
 
-.delete-btn{
+/* .delete-btn{
     background-color: rgb(247, 247, 59)
 }
 
 .complete-btn{
     background-color: rgb(225, 169, 64)
-}
+} */
 
 
 
@@ -74,6 +82,7 @@ input, button {
 #new-task-form{
     display: flex;
 }
+
 .next {
     background-color: rgb(204, 248, 149);
 }
