@@ -9,23 +9,35 @@
 body{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    background-image: linear-gradient( teal, green );
+    background-image: linear-gradient( teal, yellow );
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     
 }
 
 .taskList{
-    margin-top: 4rem;
+    margin-top: 2.25rem;
     list-style-type: none;
-    border: 3px solid greenyellow;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    min-width: 30%;
+}
+
+.containerList{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    margin-bottom: 0.5rem;
+    min-width: 30%;
+    background-color: white;
+    font-size: 1rem;
 }
 
 h1 {
     color:rgb(82, 84, 86);
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    font-size: 2.25rem;
 }
 
 input, button {
@@ -33,6 +45,10 @@ input, button {
     border: none;
     outline: none;
     background: none;
+}
+
+button{
+    flex: 1;
 }
 
 .inputBox{
@@ -49,40 +65,9 @@ input, button {
     );
 }
 
-.containerList{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    min-width: 30%;
-}
-
-
-
-/* .container2 .text{
-    color:antiquewhite;
-    font-size: 1rem;
-    width: 100%;
-    display: block;
-    padding: 1rem;
-    transition: 0.4s;
-} */
-
-/* .delete-btn{
-    background-color: rgb(247, 247, 59)
-}
-
-.complete-btn{
-    background-color: rgb(225, 169, 64)
-} */
-
-
-
-
-#new-task-form{
-    display: flex;
-}
-
 .next {
-    background-color: rgb(204, 248, 149);
+    background-color: rgb(166, 163, 163);
+    text-decoration:line-through;
 }
+
+

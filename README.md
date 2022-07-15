@@ -34,5 +34,10 @@ Bring some CSS style to the font family, size and color, and background color. T
 - Visual Code
 - Postico
 
+##Screen Shot
+
+![image](image/to-do-list.png)
+
 ## Acknowledgement
 
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. Thanks to our insturctors - Liz and Dane for their guidance and dynamatic teaching skills. Last, but not least Thanks to all my classmates for their support and estatic attitude.
