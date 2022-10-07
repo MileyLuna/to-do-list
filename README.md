@@ -16,7 +16,7 @@ Include a database.sql file that includes all of your CREATE TABLE quries.
 
 It was challenging creating a checkbox and changing the background color once a task was completed.
 
-## Installation
+###Installation
 - HTML
 - Javascript
 - jQuery
@@ -29,12 +29,12 @@ Create a new database through Postico, using the name weekend-to-do-app. Don't f
 ###Styling
 Bring some CSS style to the font family, size and color, and background color. Text color and/or background color of that task to change showing it has been completed.
 
-## Built With
+###Built With
 
 - Visual Code
 - Postico
 
-##Screen Shot
+###Screen Shot
 
 ![image](image/to-do-list.png)
 
